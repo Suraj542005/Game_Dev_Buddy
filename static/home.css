@@ -1,0 +1,990 @@
+/* ------- Osmo [https://osmo.supply/] ------- */
+/* Osmo UI: https://slater.app/10324/23333.css */
+
+body {
+    background-color: var(--color-neutral-900);
+    color: var(--color-light);
+    font-size: var(--size-font);
+    margin: 0;
+    padding: 0;
+}
+
+.cloneable {
+    padding: var(--container-padding);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+
+.parallax__fade {
+    --color-dark-rgb: 0, 0, 0;
+    background: linear-gradient(to top, rgba(var(--color-dark-rgb), 1) 0%, rgba(var(--color-dark-rgb), 0.738) 19%, rgba(var(--color-dark-rgb), 0.541) 34%, rgba(var(--color-dark-rgb), 0.382) 47%, rgba(var(--color-dark-rgb), 0.278) 56.5%, rgba(var(--color-dark-rgb), 0.194) 65%, rgba(var(--color-dark-rgb), 0.126) 73%, rgba(var(--color-dark-rgb), 0.075) 80.2%, rgba(var(--color-dark-rgb), 0.042) 86.1%, rgba(var(--color-dark-rgb), 0.021) 91%, rgba(var(--color-dark-rgb), 0.008) 95.2%, rgba(var(--color-dark-rgb), 0.002) 98.2%, transparent 100%);
+}
+
+/* .parallax__fade_rev {
+    --color-dark-rgb: 0, 0, 0;
+    background: linear-gradient(to top, rgba(var(--color-dark-rgb), 0.002) 0%, rgba(var(--color-dark-rgb), 0.008) 19%, rgba(var(--color-dark-rgb), 0.021) 34%, rgba(var(--color-dark-rgb), 0.042) 47%, rgba(var(--color-dark-rgb), 0.075) 56.5%, rgba(var(--color-dark-rgb), 0.126) 65%, rgba(var(--color-dark-rgb), 0.194) 73%, rgba(var(--color-dark-rgb), 0.278) 80.2%, rgba(var(--color-dark-rgb), 0.382) 86.1%, rgba(var(--color-dark-rgb), 0.541) 91%, rgba(var(--color-dark-rgb), 0.738) 95.2%, rgba(var(--color-dark-rgb), 1) 98.2%, transparent 100%);
+} */
+
+.parallax__fade_rev {
+    
+    --color-dark-rgb: 0, 0, 0;
+    background: linear-gradient(to bottom, 
+        rgba(var(--color-dark-rgb), 1) 0%, 
+        rgba(var(--color-dark-rgb), 0.738) 19%, 
+        rgba(var(--color-dark-rgb), 0.541) 34%, 
+        rgba(var(--color-dark-rgb), 0.382) 47%, 
+        rgba(var(--color-dark-rgb), 0.278) 56.5%, 
+        rgba(var(--color-dark-rgb), 0.194) 65%, 
+        rgba(var(--color-dark-rgb), 0.126) 73%, 
+        rgba(var(--color-dark-rgb), 0.075) 80.2%, 
+        rgba(var(--color-dark-rgb), 0.042) 86.1%, 
+        rgba(var(--color-dark-rgb), 0.021) 91%, 
+        rgba(var(--color-dark-rgb), 0.008) 95.2%, 
+        rgba(var(--color-dark-rgb), 0.002) 98.2%, 
+        transparent 100%);
+        /* background-color: #ff4b2b; */
+        /* border: green solid 5px ; */
+        /* height: 100%; */
+        /* width: 100%; */
+        margin-top: 0%;
+        top: 67%;
+
+    }
+
+
+.osmo-icon-svg {
+    width: 8em;
+    position: relative;
+}
+
+.parallax__header {
+    z-index: 2;
+    padding: var(--section-padding) var(--container-padding);
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    display: flex;
+    position: relative;
+}
+
+.parallax {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax__content {
+    padding: var(--section-padding) var(--container-padding);
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    display: flex;
+    position: relative;
+}
+
+.cover {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parallax__visuals {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    /* height: 120%; */
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* color: yellow; */
+}
+
+.parallax__placeholder {
+    z-index: 0;
+    opacity: 0;
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parallax__layers {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /* My code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-copy {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parallax__fade {
+    z-index: 30;
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    
+    left: 0;
+}
+.parallax__fade_rev {
+    z-index: 30;
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax__black-line-overflow {
+    z-index: 20;
+    background-color: var(--color-black);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.parallax__title {
+    pointer-events: auto;
+    text-align: center;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: .1em;
+    margin-right: .075em;
+    font-family: PP Neue Corp Wide, sans-serif;
+    font-size: 11vw;
+    font-weight: 800;
+    line-height: 1;
+    position: relative;
+    width: 100%;
+    color: #ffffffad;
+    z-index: 20;
+}
+
+
+.parallax__radial-gradient {
+    z-index: 10;
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, var(--color-black));
+    opacity: .5;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    position: fixed;
+    inset: 0;
+}
+
+.parallax__layer-title {
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 5%;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parallax__layer-img {
+    pointer-events: none;
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 117.5%;
+    position: absolute;
+    top: -17.5%;
+    left: 0;
+}
+
+/* Character Code */
+.char_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    margin-top: 30%;
+    margin-left: 30%;
+    margin-right: 25%;
+    background-blend-mode: hard-light;
+    z-index: 20;
+}
+
+.floating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    /* Change as per your theme */
+}
+
+.floating-img {
+    /* width: 200px; Adjust as needed */
+    animation: float 5s ease-in-out infinite;
+}
+
+.floating-img2 {
+    /* width: 200px; Adjust as needed */
+    animation: float2 8s ease-in-out infinite;
+    /* position: absolute; */
+    /* width: 80; */
+    z-index: 20;
+}
+
+.floating-img3 {
+    /* width: 200px; Adjust as needed */
+    animation: float3 8s ease-in-out infinite;
+    /* position: absolute; */
+    /* width: 80; */
+    z-index: 10;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    /* Moves up */
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(80px);
+    }
+
+    /* Moves up */
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    /* Moves up */
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.parallax__layer-img.is-third {
+    top: -20%;
+}
+
+
+.glow {
+    display: inline-block;
+    /* font-size: 3rem; Adjust as needed */
+    /* font-weight: bold; */
+    /* color: white; */
+    transition: text-shadow 0.4s ease-in-out, color 0.5s ease-in-out;
+}
+
+.glow2 {
+    color: #af6be7;
+    display: inline-block;
+    transition: text-shadow 0.4s ease-in-out, color 0.5s ease-in-out;
+    text-shadow: 0px 0px 10px white, 0 0 20px white, 0 0 30px white;
+}
+
+/* Glow effect on hover */
+.glow:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    color: #af6be7;
+}
+
+.glow2:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+}
+
+
+@font-face {
+    font-family: 'PP Neue Corp Wide';
+    src: url('https://cdn.prod.website-files.com/671752cd4027f01b1b8f1c7f/6717e399d30a606fed425914_PPNeueCorp-WideUltrabold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Nav Bar */
+.nav_bar {
+    position: absolute;
+    /* Ensures the navbar overlays the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    /* Optional: semi-transparent background */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 8px 6px 20px 2px; */
+    z-index: 10;
+    /* Keeps it above other elements */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 10%;
+}
+
+.nav_bar ul li {
+    margin: 0 15px;
+}
+
+.nav_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffffad;
+}
+
+.nav_bar ul li a:hover {
+    color: #ffffff;
+}
+
+#logo {
+    border-radius: 50%;
+    border-color: azure 2px;
+    height: 70px;
+}
+
+/* End */
+
+/* Login Page */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    background-color: blueviolet;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* End */
+
+
+/* Particles */
+#particles-js {
+    position: fixed;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+/* End */
+
+
+/* Page - 2 */
+.outer_pg_2 {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    background-color: black;
+}
+
+.inner_pg_2 {
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description_box {
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100%;
+    width: 60%;
+    /* background-color: crimson; */
+    /* filter: blur(2px); */
+}
+
+.description_box h1 {
+    color: white;
+    font-size: 7rem;
+}
+
+.description_box h2 {
+    color: #898993;
+}
+
+.image_box {
+    height: 100%;
+    width: 40%;
+    /* background-color: yellow; */
+    /* padding-right: 5%; */
+    /* background-color: royalblue; */
+    /* z-index: 2; */
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.image_box img {
+    display: flex;
+    justify-self: end;
+    /* margin-top: 10%; */
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+    z-index: 20;
+    filter:blur(0.1px);
+}
+
+
+/* Animation Effect */
+@property --＠color-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(98 100% 62%);
+}
+
+@property --＠color-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(204 100% 59%);
+}
+
+/* keyframes that change the color variable */
+@keyframes gradient-change {
+    to {
+        --＠color-1: hsl(210 100% 59%);
+        --＠color-2: hsl(310 100% 59%);
+    }
+}
+
+.article {
+    /* apply variable changes over time */
+    animation: gradient-change 5s linear infinite alternate;
+
+    background: linear-gradient(to right in oklch,
+            var(--＠color-1),
+            var(--＠color-2));
+
+    /* old browser support */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* modern browser version */
+    background-clip: text;
+    color: transparent;
+}
+
+@layer demo.support {
+    h1 {
+        font-size: 10vmin;
+        line-height: 1.1;
+    }
+
+    body {
+        background: hsl(204 100% 5%);
+
+        min-block-size: 100%;
+        box-sizing: border-box;
+        display: grid;
+        place-content: center;
+
+        font-family: system-ui, sans-serif;
+        font-size: min(200%, 4vmin);
+
+        /* padding: 5vmin; */
+    }
+/* 
+    h1,
+    p,
+    body {
+        margin: 0;
+        text-wrap: balance;
+    } */
+/* 
+    h1 {
+        line-height: 1.25cap;
+    } */
+/* 
+    p {
+        font-family: "Dank Mono", ui-monospace, monospace;
+    } */
+/* 
+    html {
+        block-size: 100%;
+    } */
+
+    article {
+        display: grid;
+        gap: 1lh;
+        text-align: center;
+    }
+}
+
+
+/* Text Color For Headline */
+:root {
+    --gradient: linear-gradient(45deg, #ff3366, #ff6b6b, #4834d4, #686de0);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --border: 1px solid rgba(255, 255, 255, 0.1);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.section-title {
+    font-size: 8vw;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s linear infinite;
+    background-size: 300%;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+/* Car Effect */
+/* 
+.container {
+    display: grid;
+    justify-content: center;
+    margin-inline: auto;
+    grid-auto-flow: column;
+    gap: 16px 40px;
+
+    @media (width < 970px) {
+        grid-auto-flow: row;
+    }
+} */
+
+/* Gradient Animated Card */
+.card {
+    width: 300px;
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background: var(--gradient);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    color: white;
+    animation: gradient 8s linear infinite;
+    background-size: 300% 300%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .card:hover {
+    transform: scale(1.05);
+} */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.card {
+    display: grid;
+    padding: 20px;
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 20px;
+    place-content: center;
+    place-items: center;
+    aspect-ratio: 1/1;
+    height: 80%;
+    width: 60%;
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0turn;
+    inherits: false;
+}
+
+.card {
+    animation: 5s gradient-angle infinite linear;
+    border: 2px solid transparent;
+    /* background-image: linear-gradient(#0a192f, #1e3a8a),
+        conic-gradient(from var(--gradient-angle),
+            #0a192f 0%,
+            #1e40af 20%,
+            #3b82f6 40%,
+            #1e40af 60%,
+            #0a192f 80%,
+            #1e40af 100%); */
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+@keyframes gradient-angle {
+    to {
+        --gradient-angle: 1turn;
+    }
+}
+
+.inner_img_box {
+    /* background-color: #1F2023; */
+    /* background-color: #08ff0c; */
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    /* justify-content: end; */
+    /* align-items: center; */
+    border-radius: 2% 15%;
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+    
+
+}
+/* Page - 2 End */
+
+
+/* Page - 3 */
+/* .outer_pg_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+}
+
+.heading_pg3 {
+    width: 100%;
+    height: 50%;
+}
+
+.button_box {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.outer_pg_3 {
+    /* z-index: 2; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #0c0c1d, #1a1a3b, #121228);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animated Background Effect */
+.outer_pg_3::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 90deg, #ff00ff, #00c6ff, #ff00ff);
+    animation: rotateBg 8s linear infinite;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+@keyframes rotateBg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.inner_pg_3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner_pg_3 img {
+    /* z-index: 2; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* filter: blur(4px); */
+    filter: blur(2px);
+}
+
+
+.pg_top {
+    /* background-color: yellow; */
+    /* z-index: 2; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg3_left {
+    /* background-color: crimson; */
+    height: 100%;
+    width: 40%;
+    z-index: 2;
+}
+
+.pg3_left img {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pg3_right {
+    /* background-color: violet; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg_bottom {
+    /* background-color: lightblue; */
+    /* z-index: 2; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Glass Morphism Card */
+.heading_pg3 {
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* backdrop-filter: blur(3px); */
+    /* padding: 30px; */
+    /* border-radius: 15px; */
+    text-align: center;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.05); */
+    z-index: 2;
+    /* margin-top: 5%; */
+    margin-left: 2%;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
+}
+
+/* Glowing Heading */
+.heading_pg3 h1 {
+    /* font-size: 3vw; */
+    font-weight: 900;
+    text-transform: uppercase;
+    /* background: linear-gradient(90deg, #ff00ff, #00c6ff); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* animation: glow 3s infinite alternate ease-in-out; */
+    color: white;
+    z-index: 100;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0px 0px 15px rgba(255, 0, 255, 0.6); }
+    100% { text-shadow: 0px 0px 25px rgba(0, 198, 255, 0.8); }
+}
+
+/* 3D Neon Button */
+.start-button {
+    position: relative;
+    padding: 15px 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00ff, #00c6ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 198, 255, 1);
+}
+
+/* Button Shine Effect */
+.button-shine {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: 0.5s;
+}
+
+.start-button:hover .button-shine {
+    left: 100%;
+}
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: floatParticles 6s infinite alternate ease-in-out;
+}
+
+@keyframes floatParticles {
+    0% { transform: translateY(0); opacity: 0.7; }
+    100% { transform: translateY(-60px); opacity: 0.3; }
+}
+
+
+/* Page - 3 End */
+
+
+/* Page - 4 */
+.outer_pg_4 {
+    background-color: yellow;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_pg_4 {
+    z-index: 20;
+    margin-top: 20%;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    margin: 20%;
+}
+
+/* Page - 4 End */

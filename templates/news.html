@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Dev News</title>
+  <link rel="stylesheet" href="/static/news.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Game Development News</h1>
+      <p>Stay updated with the latest trends, releases, and insights from the game development world.</p>
+    </div>
+    
+    <div class="content">
+      <!-- News Articles -->
+      <div class="articles-container">
+        <div class="filter-bar">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Search articles...">
+          </div>
+          <div class="filter-dropdown">
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+              <option value="industry">Industry Updates</option>
+              <option value="technology">Technology</option>
+              <option value="indie">Indie Spotlight</option>
+              <option value="tutorials">Tutorials</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="articles-grid" id="articlesGrid">
+          <!-- Article cards will be dynamically inserted here -->
+        </div>
+        
+        <div class="pagination" id="pagination">
+          <!-- <button class="page-button active" data-page="1">1</button>
+          <button class="page-button" data-page="2">2</button>
+          <button class="page-button" data-page="3">3</button>
+          <button class="next-button">Next →</button> -->
+        </div>
+      </div>
+      
+      <div class="sidebar">
+        <!-- Featured Article -->
+        <div class="card featured">
+          <h2>Featured Article</h2>
+          <div class="featured-article" id="featuredArticle">
+            <!-- Featured article will be inserted here -->
+          </div>
+        </div>
+        
+        <!-- Newsletter Signup -->
+        <div class="card">
+          <h2>Stay Updated</h2>
+          <p class="sidebar-text">Subscribe to our newsletter to receive the latest game dev news and updates.</p>
+          <form id="newsletterForm">
+            <div class="form-group">
+              <input type="email" id="emailNewsletter" placeholder="Your email address">
+              <p class="error" id="emailNewsletterError"></p>
+            </div>
+            <button type="submit" id="subscribeButton">Subscribe</button>
+          </form>
+        </div>
+        
+        <!-- Popular Tags -->
+        <div class="card">
+          <h2>Trending Topics</h2>
+          <div class="tags">
+            <a href="#" class="tag">#UnrealEngine5</a>
+            <a href="#" class="tag">#GameAI</a>
+            <a href="#" class="tag">#IndieGameDev</a>
+            <a href="#" class="tag">#GameDesign</a>
+            <a href="#" class="tag">#Unity3D</a>
+            <a href="#" class="tag">#GameAudio</a>
+            <a href="#" class="tag">#Godot4</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <div class="toast-content">
+        <p id="toastMessage"></p>
+      </div>
+      <span id="closeToast" class="close-toast">&times;</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-links">
+    <a href="/" class="nav-link">Home</a>
+    <a href="news.html" class="nav-link active">News</a>
+    <a href="contact" class="nav-link">Contact</a>
+  </div>
+
+  <script src="/static/news.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameDevBuddy</title>
+    <meta name="description"
+        content="Chat with our AI game development assistant to get help with your game projects." />
+    <link rel="stylesheet" href="/static/chat.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">
+                    <div class="logo-icon">
+                        <img id="logo" src="/static/Img/Iron_Gaming_MK50.jpg" alt="Logo" style="border-radius: 20%;">
+                    </div>
+                    <span class="logo-text">GameDevBuddy</span>
+                </a>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="chat" class="nav-link primary active">New Chat</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Chat Area -->
+        <div class="chat-container">
+            <div class="container chat-layout">
+                <!-- Sidebar -->
+                <!-- <aside class="chat-sidebar">
+          <div class="sidebar-menu">
+            <button class="sidebar-button">New Chat</button>
+            <div class="sidebar-divider"></div>
+            <h3 class="sidebar-heading">Resources</h3>
+            <button class="sidebar-button">Documentation</button>
+            <button class="sidebar-button">Preferences</button>
+          </div>
+        </aside> -->
+
+                <!-- Main Chat -->
+                <!-- <main class="chat-main chat-window"> -->
+                <main class="chat-main">
+
+                    <!-- Initial Message -->
+                    <div class="chat-messages" id="messages">
+                        <div class="message received">
+                            Hi there! I'm your GameDevBuddy. How can I help with your game development project today?
+                        </div>
+                    </div>
+
+
+
+                    <!-- Input -->
+                    <div class="chat-input-area">
+                        <!-- Inner Container -->
+                        <div class="chat-input-container">
+
+                            <input type="text" id="messageInput" class="chat-input"
+                                placeholder="Ask about game development..." />
+
+                            <button id="sendBtn" class="send-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+
+                        </div>
+                        <!-- End Inner Container -->
+
+                    </div>
+                    <!-- End -->
+
+
+                </main>
+                <p class="chat-helper-text">GameDevBuddy can assist with code, design, art direction, and more.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <!-- <p>&copy; 2025 GameDevBuddy — Your AI-Powered Game Development Assistant</p> -->
+                <p>&copy; This Website is Handel by Suraj</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.3/dist/purify.min.js"></script>
+
+</body>
+
+</html>
