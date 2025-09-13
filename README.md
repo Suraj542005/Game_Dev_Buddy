@@ -1,10 +1,5 @@
 # 🎮 Game Dev Buddy
 
-[![GitHub issues](https://img.shields.io/github/issues/Suraj542005/Game_Dev_Buddy)](https://github.com/Suraj542005/Game_Dev_Buddy/issues)
-[![GitHub forks](https://img.shields.io/github/forks/Suraj542005/Game_Dev_Buddy)](https://github.com/Suraj542005/Game_Dev_Buddy/network)
-[![GitHub stars](https://img.shields.io/github/stars/Suraj542005/Game_Dev_Buddy)](https://github.com/Suraj542005/Game_Dev_Buddy/stargazers)
-[![GitHub license](https://img.shields.io/github/license/Suraj542005/Game_Dev_Buddy)](LICENSE)
-
 ---
 
 ## 📌 Overview
@@ -96,14 +91,6 @@ Here, you can start interacting with **Game Dev Buddy**.
 
 ---
 
-## 📸 Screenshots
-
-*(Add actual screenshots of your project UI here)*  
-
-![Demo Screenshot](static/images/demo.png)
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions from the community!  
@@ -128,7 +115,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 - **Author**: Suraj  
 - **GitHub**: [@Suraj542005](https://github.com/Suraj542005)  
-- *(Optional: Email or LinkedIn profile if you want to share)*  
+- **LinkedIn** [suraj-shailesh-jagtap](linkedin.com/in/suraj-shailesh-jagtap/)  
 
 ---
 
